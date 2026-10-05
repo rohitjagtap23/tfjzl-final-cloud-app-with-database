@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Online Courses</title>
+</head>
+<body>
+<div class="container mt-4">
+    <h2>Online Courses</h2>
+    {% for course in course_list %}
+    <div class="card mt-2">
+        <div class="card-body">
+            <h5>{{ course.name }}</h5>
+            <p>{{ course.description }}</p>
+            <a href="{% url 'onlinecourse:course_details' course.id %}" class="btn btn-primary">View Course</a>
+        </div>
+    </div>
+    {% empty %}
+    <p>No courses available.</p>
+    {% endfor %}
+</div>
+</body>
+</html>

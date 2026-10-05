@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html><body>
+<div class="container mt-4">
+<h2>Login</h2>
+<form method="post">{% csrf_token %}
+<input name="username" placeholder="Username">
+<input type="password" name="psw" placeholder="Password">
+<button type="submit">Login</button>
+</form>
+</div>
+</body></html>

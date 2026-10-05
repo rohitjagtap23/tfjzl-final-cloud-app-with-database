@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Exam Result</title>
+</head>
+<body>
+<div class="container mt-4">
+    {% if grade >= 50 %}
+        <div class="alert alert-success">
+            <h2>Congratulations!</h2>
+            <p>You have successfully completed the exam.</p>
+        </div>
+    {% else %}
+        <div class="alert alert-warning">
+            <h2>Keep Practicing!</h2>
+        </div>
+    {% endif %}
+
+    <h3>Score: {{ grade }}</h3>
+    <h4 class="mt-4">Exam Results</h4>
+
+    {% for choice in choices %}
+    <div class="card mt-2">
+        <div class="card-body">
+            <p>{{ choice.question.content }}</p>
+            <span class="badge badge-success">{{ choice.content }}</span>
+        </div>
+    </div>
+    {% empty %}
+    <p>No choices were submitted.</p>
+    {% endfor %}
+</div>
+</body>
+</html>

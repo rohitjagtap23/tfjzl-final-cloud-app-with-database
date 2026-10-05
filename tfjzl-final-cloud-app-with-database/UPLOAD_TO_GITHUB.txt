@@ -1,0 +1,18 @@
+1. Extract this ZIP.
+2. Go inside the extracted folder.
+3. On GitHub, create a NEW PUBLIC repository named:
+   tfjzl-final-cloud-app-with-database
+
+4. Upload ALL files/folders from this extracted folder.
+   Important: manage.py must be directly in the repository root.
+
+5. Verify these URLs open publicly before submitting:
+   https://github.com/rohitjagtap23/tfjzl-final-cloud-app-with-database/blob/main/onlinecourse/models.py
+   https://github.com/rohitjagtap23/tfjzl-final-cloud-app-with-database/blob/main/onlinecourse/admin.py
+   https://github.com/rohitjagtap23/tfjzl-final-cloud-app-with-database/blob/main/onlinecourse/templates/onlinecourse/course_details_bootstrap.html
+   https://github.com/rohitjagtap23/tfjzl-final-cloud-app-with-database/blob/main/onlinecourse/views.py
+   https://github.com/rohitjagtap23/tfjzl-final-cloud-app-with-database/blob/main/onlinecourse/urls.py
+
+6. Only after all five URLs open in an incognito/private browser window, use those URLs in the assignment.
+
+7. Keep your already-accepted Q3 and Q7 screenshots if the assignment lets you reuse them. Do not submit an AI-generated screenshot as if it were an actual run of your application.
